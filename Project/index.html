@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Great+Vibes&family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+
+    <div class="alert-error">
+        Digite somente numeros
+    </div>
+
+    <div class="container">
+        <main class="card">
+            <form action="">
+                <h1 class="tittle">Calculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso(kg)</label>
+                    <input placeholder="60" id="weight" type="text">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="height">Altura (cm)</label>
+                    <input placeholder="165" id="height" type="text">
+                </div>
+
+                <button type="submit">Calcular IMC</button>
+            </form>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="tittle">
+
+                <button class="close">
+                    <img src="close (1).png" alt="">
+                </button>
+                <span>Seu IMC é de 28</span>
+            </h2>
+        </div>
+    </div>
+     
+    <script src="script.js"></script>
 </body>
 </html>
